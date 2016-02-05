@@ -2,11 +2,12 @@
 #include <time.h>
 #include <stdlib.h>
 
+#define MAXNUMBER 51
+
 bool hasGuessed = false, gameOn = true;
-int number, guess, tries, MAXNUMBER;
+int number, guess, tries;
 
 int main() {
-	MAXNUMBER  = 51;
 	srand(time(NULL));
 	
 	while (gameOn) {
